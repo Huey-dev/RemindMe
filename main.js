@@ -1,1 +1,3 @@
-alert("this is working")
+window.addEventListener('load', () => {
+    todo = JSON.parse(localStorge.getItem('todos')) || [    ]
+})

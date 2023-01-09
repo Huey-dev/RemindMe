@@ -11,10 +11,99 @@
     <title>remindMe.app</title>
 </head>
 <body>
+    <!-- title -->
     <main class="app">
+
         <section class="greeting">
-            
+            <h2 class="title">
+                What's Up?, <input type="text" id="name" placeholder="type name here">
+            </h2>
         </section>
+
+    <!-- new to-do list structure(section) main input for todo list-->
+
+        <section class="create-todo">
+            <h3>Create a Todo</h3>
+                <form id="new-todo-form">
+                    <h4>What's on your Todo list?</h4>
+                    <input 
+                        type="text"
+                        name="content"
+                        id="content" 
+                        placeholder="e.g. make a video">
+    <!-- todo list category -->
+
+                    <h4>Pick a Category</h4>
+                    <!-- category options -->
+
+                    <div class="options">
+
+                        <label>
+                            <input 
+                                type="radio" 
+                                name="category" 
+                                id="category1" 
+                                value="business">
+                            <span class="bubble business"></span>
+                            <div>Business</div>
+                        </label>
+
+                        <label>
+                            <input 
+                                type="radio" 
+                                name="category" 
+                                id="category2" 
+                                value="personal">
+                            <span class="bubble personal"></span>
+                            <div>Personal</div>
+                        </label>
+                    </div>
+                    <input type="submit" value="Add todo"/>
+                </form>
+        </section>
+
+        <!-- todo list section to be interact,,, -->
+
+        <section class="todo-list">
+            <h3> Todo List </h3>
+            <div id="todo-list" class="list">
+                <!-- todo item  this is just a placeholder for the structure of our scripting-->
+                <!-- <div class="todo-item done">
+                    <label>
+                        <input type="checkbox"/>
+                        <span class="bubble business"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="make a video" readonly>
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="todo-item">
+                <label>
+                    <input type="checkbox"/>
+                    <span class="bubble personal"></span>
+                </label>
+
+                <div class="todo-content">
+                    <input type="text" value="get milk" readonly>
+                </div>
+
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
+         -->
+        </section>
+
+
     </main>
 
 
